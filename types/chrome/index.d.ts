@@ -2988,7 +2988,7 @@ declare namespace chrome {
          * Parameter resource: A devtools.inspectedWindow.Resource object for the resource that was clicked.
          */
         export function setOpenResourceHandler(
-            callback?: (resource: chrome.devtools.inspectedWindow.Resource) => void,
+            callback?: (resource: chrome.devtools.inspectedWindow.Resource, lineNumber: number) => void,
         ): void;
         /**
          * @since Chrome 38
